@@ -1,0 +1,27 @@
+<div class="container">
+    <h1>All Posts</h1>
+    <a class="btn btn-primary" [routerLink]="['/posts/create']">Create Post</a>
+    <div class="table-responsive">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Title</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let post of posts">
+                    <td>{{ post.id }}</td>
+                    <td><a [routerLink]="['/posts', post.id]">{{ post.title }}</a></td>
+                    <td>{{ post.body }}</td>
+                    <td>
+                        <button class="btn btn-danger" (click)="removePost(post)">
+                            <i class="ti-close"></i>
+                        </button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
