@@ -8,6 +8,7 @@ export const appRoutes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'posts', loadChildren: 'app/blog/post/post.module#PostModule' },
+  { path: 'upload-manager', loadChildren: 'app/upload-manager/upload-manager.module#UploadManagerModule' },
   { path: '',
     redirectTo: '/home',
     pathMatch: 'full'
