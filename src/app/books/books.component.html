@@ -1,0 +1,34 @@
+<div class="container">
+    <h3 class="title">Books List</h3>
+    <div class="border-divider"></div>
+    <div class="row">
+        <div class="col-xs-3">
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let book of booksList" (click)="getBookDetails(book)">
+                    <div class="cover-image-container">
+                        <span class="cover-image">
+			<img [src]="book.coverImage" alt="cover image" width="64"/>
+		</span>
+                    </div>
+                    <div class="clear">
+                        <h3 class="book-title">{{book.title}}</h3>
+                        <h4 class="book-author">{{book.authors}}</h4>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="col-xs-9">
+            <div class="row selected-book" *ngIf="selectedBook">
+                <div class="col-xs-2">
+                    <img [src]="selectedBook.coverImage" alt="cover image" />
+                </div>
+                <div class="col-xs-8">
+                    <h3 class="title">{{selectedBook.title}}</h3>
+                    <p>{{selectedBook.authors}}</p>
+                    <p>{{selectedBook.published}}</p>
+                    <p>{{selectedBook.description}}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
