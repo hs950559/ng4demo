@@ -9,7 +9,6 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { ContactComponent } from './contact/contact.component';
-import { BooksComponent } from './books/books.component';
 
 
 @NgModule({
@@ -17,8 +16,7 @@ import { BooksComponent } from './books/books.component';
     AppComponent,
     HomeComponent,
     PageNotFoundComponent,
-    ContactComponent,
-    BooksComponent
+    ContactComponent
   ],
   imports: [
     BrowserModule,

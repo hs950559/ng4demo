@@ -1,6 +1,8 @@
 # ng4demo
 Angular 4 demo
 
+-- Updated with Angular 4.1.2 & Bootstrap 4
+
 ```
 npm i -g @angular/cli
 ng new ng4demo
