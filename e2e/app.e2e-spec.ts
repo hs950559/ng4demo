@@ -1,14 +1,14 @@
-import { MyprojPage } from './app.po';
+import { Lbng4Page } from './app.po';
 
-describe('myproj App', () => {
-  let page: MyprojPage;
+describe('lbng4 App', () => {
+  let page: Lbng4Page;
 
   beforeEach(() => {
-    page = new MyprojPage();
+    page = new Lbng4Page();
   });
 
-  it('should display message saying app works', () => {
+  it('should display welcome message', () => {
     page.navigateTo();
-    expect(page.getParagraphText()).toEqual('app works!');
+    expect(page.getParagraphText()).toEqual('Welcome to app!!');
   });
 });

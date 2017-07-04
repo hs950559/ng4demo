@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { HttpModule } from '@angular/http';
 import { PostComponent } from './post.component';
 import { PostService } from './post.service';
 import { PostDetailComponent } from '../post-detail/post-detail.component';
@@ -9,6 +10,7 @@ import { PostRoutingModule } from './post-routing.module';
 
 @NgModule({
   imports: [
+    HttpModule,
     CommonModule,
     FormsModule,
     PostRoutingModule
